@@ -10,7 +10,7 @@ const About = ({ data })=>{
             <ContactBtn/>
 
             {/* Title */}
-            <span className="text-xl mx-6"><span className="font-semibold">About</span> Me</span>
+            <span className="text-xl mx-6 text-blue-900"><span className="font-semibold">About</span> Me</span>
 
             <div className="my-20 flex flex-col items-center">
 
@@ -19,7 +19,7 @@ const About = ({ data })=>{
                     {/* Image and Border */}
 
                     <div className="-mt-32 mx-auto w-52 h-52 border-4 border-indigo-600 rounded-3xl flex justify-center items-center px-4">
-                        <img className="rounded-3xl" src="./images/" alt="fuwad"/>
+                        <img className="rounded-3xl object-cover" src="./images/fuwad.jpeg" alt="fuwad"/>
                     </div>
 
                     {/* Name */}
@@ -30,11 +30,12 @@ const About = ({ data })=>{
 
                     {/* Lead */}
 
-                    <div className="text-gray-600 mx-6 py-8 leading-6">
-                             I’m an enthusiastic person who has a passion in designing.<br/>
-                        <div className="py-6">
-                            Have a design query,<br/>
-                            I’m here to help...
+                    <div className="text-gray-600 flex flex-col items-center mx-auto px-8 py-8 leading-6">
+                        <div>
+                            <p>I’m an enthusiastic person who has a passion in designing.</p>
+                            <p className="py-6">
+                                Have a design query, I’m here to help...
+                            </p>
                         </div>
                     </div>
 
@@ -55,7 +56,7 @@ const About = ({ data })=>{
                     <div className="mx-4 w-min -mt-8 text-2xl font-semibold bg-blue-50 text-blue-900">
                         Experience
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col py-6 md:grid md:grid-cols-3 gap-6 justify-items-center items-center">
                         {data.experience.map(exp =>(
                             <AboutCard data={exp} key={exp.title}/>
                         ))}
@@ -65,7 +66,7 @@ const About = ({ data })=>{
                     <div className="mx-4 w-min -mt-5 text-2xl font-semibold bg-blue-50 text-blue-900">
                         Education
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col py-6 md:grid md:grid-cols-3 justify-items-center items-center">
                         {data.education.map(edu =>(
                             <AboutCard data={edu} key={edu.title}/>
                         ))}
