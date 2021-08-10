@@ -2,22 +2,22 @@
     
     "works":[
       {
-        "name":"Work title 1",
+        "name":"Work title",
         "src":"subnautica.png",
         "id":0
     },
     {
-        "name":"Work title 2",
+        "name":"Work title",
         "src":"subnautica.png",
         "id":1
     },
     {
-        "name":"Work title 3",
+        "name":"Work title",
         "src":"subnautica.png",
         "id":2
     },
     {
-        "name":"Work title 4",
+        "name":"Work title",
         "src":"subnautica.png",
         "id":3
     }
